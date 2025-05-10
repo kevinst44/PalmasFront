@@ -21,7 +21,7 @@ export default function Salon(){
           setIsLoading(true);
       
           try {
-            const response = await fetch('http://localhost:4000/palmas/palmasbot', {
+            const response = await fetch('https://palmas-back.vercel.app/palmas/palmasbot', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ export default function Salon(){
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:4000/palmas/salon', {
+                const response = await fetch('https://palmas-back.vercel.app/palmas/salon', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
